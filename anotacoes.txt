@@ -1,0 +1,22 @@
+!// cria a estrutura do cod
+p// paragrafo
+br// quebra de linha
+emoji//&#x e cod
+link para adicionar favicon
+q: citação
+ol//listas ordenadas// dentro do ol tem 'li' para cada passo que for fazer
+../ - pag anterior
+abbr = significado ou abreviação
+// tag 'picture' para varios tamanhos de imagens, source media - g por ultimo
+"*" = configuração global
+font-face = fontes baixadas
+html "id" = css "#"
+html "class" = css "."
+:hover (quando passar o mouse muda a config)
+# = id
+. = class
+: = pseudo-class
+"::" = pseudo-elemento
+> =clildren
+text indent : margem de paragrafo
+line-heigh : espaço entre linhas
