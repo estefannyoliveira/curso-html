@@ -20,3 +20,4 @@ html "class" = css "."
 > =clildren
 text indent : margem de paragrafo
 line-heigh : espaço entre linhas
+height 100vh = 100% da tela
