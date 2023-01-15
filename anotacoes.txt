@@ -21,3 +21,15 @@ html "class" = css "."
 text indent : margem de paragrafo
 line-heigh : espaço entre linhas
 height 100vh = 100% da tela
+background attachment ; fixed = imagem parada
+
+shorthand background = color image position repeat [size] attachment
+
+"alinhamento vertical" =
+contendo: position relative
+
+conteudo: p  absolute &
+left: 50%;
+top:50%;
+transform: translate(-50%, -50%);
+            
