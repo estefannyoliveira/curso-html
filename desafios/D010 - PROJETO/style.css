@@ -86,6 +86,8 @@ nav > a{
     display: inline-block;
     transition-duration: 0.5s;
     font-weight: bold;
+
+    display: inline-block;
 }
 nav > a:hover{
     background-color: var(--cor02);
