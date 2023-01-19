@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+
+            padding: 10px;
+           background-color: rgb(211, 208, 208);
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: rgb(209, 205, 205);
+        }
+
+        thead> th > tr{
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>População dos Estados</caption>
+        <thead>
+            <tr>
+                <th scope="col">
+                    Estado
+                </th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+           
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Sao Paulo
+                </td>
+                <td class="num">41.262.199</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">19.597.330</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">15.989.929</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.016.906</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">10.444.526</td>
+            </tr>
+            <tr>
+                <td>Rio Grade do Sul</td>
+                <td class="num">10.693.929</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</td>
+                <td class="num"><strong>112.004.819</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
