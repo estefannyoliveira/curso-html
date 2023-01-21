@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste com Formulario</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        margin: 0px 40px 0px 40px;
+        background-color: #BC8AE1;
+        
+    }
+
+    h1{
+        margin-bottom: 15px;
+        color: white;
+    }
+    section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
+
+        text-align: center;
+
+    }
+    label{
+        color: rgb(110, 204, 211);
+        text-align: left;
+        font-weight: bold;
+       
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+    form{
+        background-color: #8251dcf8;
+        padding: 40px; 
+        border-radius: 20px;
+      
+        
+    }
+    input{
+        border-radius: 10px;
+        border: 0.5px solid black;
+        padding: 10px;
+        width: 300px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        background-color: white;
+        border: none;
+    }
+    .cad{
+        padding: 15px;
+        margin-top: 10px;
+        background-color: lightsalmon;
+        color: aliceblue;
+        font-weight: bold;
+        border: none;
+    }
+    .dados{
+    
+    }
+   
+</style>
+<body>
+    
+    <section>
+        <form action="cadastro.php" method="post">
+            <h1>PREENCHA O FORMULÁRIO:</h1>
+            <p>
+                <label  for="inome"> NOME: </label>
+                <input type="text" name="nome" id="inome" required maxlength="30">
+            </p>
+            <p>
+                <label for="user">USER:</label> 
+                <input type="text" name="user" id="iuser" required maxlength="10">
+            </p>
+            <p>
+                <label for="inasc">DATA DE NASCIMENTO</label>
+                <input type="date" name="nasc" id="inasc" required>
+            </p>
+            <P>
+                <input type="submit" value="CADASTRAR" class="cad">
+            </P>
+        </form>
+    </section>
+</body>
+</html>
