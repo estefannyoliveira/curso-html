@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     list-style: none;
@@ -16,7 +16,9 @@
 
 body{
     color:var(--dark);
-    background-color: var(--white);
+    /*background-color: var(--white);background-color:#f6c771;*/
+    
+    background-color: #f6c77153;
 }
 
 .navegation{
@@ -26,20 +28,28 @@ body{
     padding: 18px 40px;
     box-shadow: 0 0.1rem 0.5rem #ccc ;
     width:100%;
-    background: var(--white);
     transition: all 0.5s;
     position: fixed;
+    
+   background: var(--white);
+   
+   
 }
 .navegation .logo{
     color: var(--red);
     font-size: 1.7rem;
     font-weight: 600;
 }
+
+.logo span{
+    color:var(--dark);
+}
 .navegation ul{
     display: flex;
     align-items: center;
     gap: 5rem;
-}.navegation ul li a{
+}
+.navegation ul li a{
     color: var(--dark);
     font-size: 17px;
     font-weight: 500;
@@ -53,9 +63,7 @@ body{
     font-size: 1.5rem;
 
 }
-.logo span{
-    color:var(--dark);
-}
+
 
 .menu{
     cursor: pointer;
@@ -88,9 +96,12 @@ body{
     max-width: 37rem;
 }
 .home-text .text-h1{
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: var(--red);
     margin-bottom: 0.3em;
+    margin-top: 5em;
+    
+
     
 }
 .home-text .text-h2{
@@ -98,5 +109,87 @@ body{
     line-height: 1.2em;
 }
 .home-text p{
-    margin-top: 1.5em;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
 }
+.home-btn{
+    padding: 15px 45px;
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 15px;
+    font-weight: 500;
+    transition: all 0.5s;
+   
+}
+.home-btn:hover{
+    background-color: #721508;
+    color: rgb(149, 146, 146);
+}
+.home-img img{
+    margin-top: 2em;
+    width: 110%;
+   
+}
+
+@media (max-width: 785px) {
+    .navegation {
+        padding: 18px 20px;
+    }
+    .menu{
+        display: block;
+    }
+
+    .menu.ativo .bar:nth-child(1){
+        transform:  translateY(8px) rotate(45deg);
+    }
+    .menu.ativo .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background-color: var(--white);
+        gap: -10px;
+        transition: 0.3s;
+
+    }
+    .nav-menu.ativo{
+        right: 0;
+    }
+
+    .nav-item{
+    margin: 16px 0;
+    }
+    .home{
+        padding: 100px 2%;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        gap: 5rem;
+    }
+    .home .text-h1{
+        font-size: 20px;
+       
+    }
+    .home .text-h2{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .home p{
+        font-size: 15px;
+    }
+    .home-img{
+        width: 125%;
+    }
+}  
+
+
+
