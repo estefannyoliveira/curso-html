@@ -27,7 +27,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 70vh;
+       
 
         text-align: center;
 
@@ -89,9 +89,33 @@
                 <label for="inasc">DATA DE NASCIMENTO</label>
                 <input type="date" name="nasc" id="inasc" required>
             </p>
+            <p><label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <optgroup label="Estados">
+                    <option value="AM">Amazonas</option>
+                    <option value="Sp">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+            </select>
+          </p>
+          <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" list="lstprof">
+            <datalist id="lstprof">
+                <option >Administrador</option>
+                <option value="Prof">Professor</option>
+                <option value="DEV">Desenvolvedor</option>
+            </datalist>
+          </p>
+          <p>
+            <label for="imsg">Mensagem</label>
+            <textarea name="msg" id="imsg" cols="40" rows="10" style="resize: none;" placeholder="Sua mensagem..."></textarea>
+          </p>
             <P>
                 <input type="submit" value="CADASTRAR" class="cad">
             </P>
+            
+          
         </form>
     </section>
 </body>
