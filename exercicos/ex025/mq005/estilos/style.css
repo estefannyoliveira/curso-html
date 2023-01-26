@@ -1,76 +1,102 @@
 @charset "utf-8";
 
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
-:root{
+
+:root {
     --cor01: #b4764f;
     --cor02: #cd966c;
     --cor03: #9a5833;
     --cor04: #e6b68b;
     --corfundo: #f1eae2;
+
+    --fontbody: font-family: 'Poppins', sans-serif;
+
+    --corheader: #00cbcc;
+    --cormenu: #029797;
+    --corlista: #40b5b59e;
+    --cordest: #8ff4f4;
 }
 
-*{
-    font-family: Arial, Helvetica, sans-serif;
+* {
+    font-family: 'Poppins', sans-serif;
     margin: 0px;
     padding: 0px;
 }
 
-body, html {
-    background-color:var(--corfundo);
+body,
+html {
+    background-color: var(--corfundo);
+    font-family: 'Poppins', sans-serif;
 }
 
-header{
-    background-color: var(--cor01);
+header {
+    /*background-color: var(--cor01);*/
+    background-color: var(--corheader);
     color: white;
+    padding-top: 15px;
 }
 
-header > h1{
+header>h1 {
     padding: 20px;
     text-align: center;
+    font-size: 2.5em;
+
 }
-#burguer{
+
+#burguer {
     display: block;
-    background-color: var(--cor03);
+
     color: white;
     text-align: center;
     padding: 10px;
     cursor: pointer;
+
+    /*background-color: var(--cor02);*/
+    background-color: var(--cormenu);
 }
-#burguer:hover{
-    background-color: var(--corfundo);
+
+#burguer:hover {
+    background-color: var(--cordest);
     color: black;
 }
 
 
 
-menu{
+menu {
     display: none;
-    background-color: var(--cor02) ;
-    
+
+
 }
 
-menu ul{
+menu ul {
     list-style-type: none;
 }
 
-menu > ul > li > a{
-   display: block;
-   padding: 10px;
-   text-decoration: none;
-   text-align: center;
-   font-weight: bold;
+menu>ul>li>a {
+    display: block;
+    padding: 7px 7px 7px 10px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
 
-   color: white;
-   border-top: 2px solid ;
-   cursor: pointer;  
+    color: white;
+
+    cursor: pointer;
+    background-color: var(--cormenu);
+
+
+
+
+
 }
 
-menu > ul > li a:hover{
-    background-color: #e6b68b;
+menu>ul>li a:hover {
+    background-color: var(--cordest);
 }
 
-main{
+main {
     min-width: 400px;
     max-width: 800px;
 
@@ -79,11 +105,11 @@ main{
     margin: auto;
     padding: 10px;
     border-radius: 10px;
-    
-    
+
+
 }
 
-main img{
+main img {
     width: 100%;
     margin: auto;
 
@@ -92,20 +118,28 @@ main img{
     border-radius: 20px;
 }
 
-article > h2{
-    padding-bottom: 20px;
-    
+article>h2 {
+    padding-top: 5px;
+    margin-top: 10px;
+
 }
 
-article{
-    margin: 0px 20px 0px 20px ;
+article {
+    margin: 0px 20px 0px 20px;
 }
 
-article p{
+article p {
     text-align: justify;
     margin-bottom: 20px;
     text-indent: 20px;
-    
-   
+
+
 }
 
+footer {
+    background-color: var(--corheader);
+    text-align: center;
+    color: #f1eae2;
+    padding: 10px;
+    font-weight: bold;
+}
